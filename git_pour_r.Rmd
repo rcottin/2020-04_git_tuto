@@ -194,6 +194,7 @@ voici la liste des principales commandes:
 * `git remote` pour changer lister les remotes (vérifier que l'adresse est correcte)
 * `git remote add origin URL` ajoute la remote `URL` avec le nickname `origin`
 * `git remote set-url origin URL` change l'adresse de la remote `origin` pour `URL`
+* `git remote --verbose` et `git remote show origin` pour checker
 
 ## utiliser git
 
@@ -204,7 +205,13 @@ voici la liste des principales commandes:
 	+ ajouter les fichiers modifiés (pas ajoutés) : `git add -u`
 	+ ajouter les nouveaux fichiers: `git add .`
 * voir les nouveaux fichiers qui ont été "stagés": `git diff --name-only --cached`
-* commit les changements: 
+  + version longue: `git diff`
+* commit les changements (avec message de commit): `git commit --message "un message"`
+* push/pull les changements vers le remote: 
+  + `git push`  version courte
+  + `git push origin master`. Ici `origin`est le nom du remote et `master` celui de la branche
+  + `git pull`
+
 
 ## gitignore
 

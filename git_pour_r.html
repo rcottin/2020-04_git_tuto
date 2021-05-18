@@ -590,6 +590,7 @@ $ rm -rf myrepo§</code></pre>
 <li><code>git remote</code> pour changer lister les remotes (vérifier que l’adresse est correcte)</li>
 <li><code>git remote add origin URL</code> ajoute la remote <code>URL</code> avec le nickname <code>origin</code></li>
 <li><code>git remote set-url origin URL</code> change l’adresse de la remote <code>origin</code> pour <code>URL</code></li>
+<li><code>git remote --verbose</code> et <code>git remote show origin</code> pour checker</li>
 </ul>
 </div>
 <div id="utiliser-git" class="section level2">
@@ -603,8 +604,17 @@ $ rm -rf myrepo§</code></pre>
 <li>ajouter les fichiers modifiés (pas ajoutés) : <code>git add -u</code></li>
 <li>ajouter les nouveaux fichiers: <code>git add .</code></li>
 </ul></li>
-<li>voir les nouveaux fichiers qui ont été “stagés”: <code>git diff --name-only --cached</code></li>
-<li>commit les changements:</li>
+<li>voir les nouveaux fichiers qui ont été “stagés”: <code>git diff --name-only --cached</code>
+<ul>
+<li>version longue: <code>git diff</code></li>
+</ul></li>
+<li>commit les changements (avec message de commit): <code>git commit --message &quot;un message&quot;</code></li>
+<li>push/pull les changements vers le remote:
+<ul>
+<li><code>git push</code> version courte</li>
+<li><code>git push origin master</code>. Ici <code>origin</code>est le nom du remote et <code>master</code> celui de la branche</li>
+<li><code>git pull</code></li>
+</ul></li>
 </ul>
 </div>
 <div id="gitignore" class="section level2">
