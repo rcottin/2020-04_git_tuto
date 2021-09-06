@@ -216,6 +216,7 @@ voici la liste des principales commandes:
   + `git push`  version courte
   + `git push origin master`. Ici `origin`est le nom du remote et `master` celui de la branche
   + `git pull`
+* liste de tous les fichiers trackés par git : `git ls-files` ou  `git ls-tree --full-tree -r --name-only HEAD`
 
 
 ## gitignore
@@ -234,6 +235,9 @@ Ajout à la main :
 Via l'invite de commandes: 
 
 * ajouter FICHIER à gitignore : `echo 'FICHIER' >> .gitignore` (attention au double `>`!)
+
+**attention** attention une fois qu'un fichier est "tracké" par Git,  cela ne servira à rien de l'ajouter au gitignore. Il faut d'abord "unstager" le fichier avec la commande suivante: 
+`git rm --cached <file-name>` ou git `rm -r --cached <folder-name>`
 
 ## Quand tout va mal
 * unstage les fichiers depuis le dernier commit : `git reset HEAD`
