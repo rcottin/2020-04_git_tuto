@@ -29,6 +29,12 @@ Les étapes pour faire marcher le système:
 * via Rstudio et le package `usethis` (cf. *infra*)
 * via l'invite de commande: 
 
+```
+git config --global user.name '@MATRICULE'
+git config --global user.email 'MAIL BPI'
+git config --global --list
+```
+
 
 
 
