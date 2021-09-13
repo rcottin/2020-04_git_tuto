@@ -274,6 +274,15 @@ NB: si cette configuration arrive en travail collaboratif, la personne en bout d
 
 NB2: d'un autre côté, il est toujours possible de revenir à une version précédente grâce à l'historique. 
 
+## remonter le temps
+```
+git reflog
+```
+Montre tout ce qui a été fait, sur toutes les branches. Chaque commit comporte un `HEAD@{index}
+```
+git reset HEAD@{index}
+```
+Machine à remonter le temps!
 
 
 
