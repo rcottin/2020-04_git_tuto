@@ -274,6 +274,40 @@ NB: si cette configuration arrive en travail collaboratif, la personne en bout d
 
 NB2: d'un autre côté, il est toujours possible de revenir à une version précédente grâce à l'historique. 
 
+## travailler avec les branches
+
+On utilise les branches pour experimenter une idée, corriger un bug, etc... sans modifier le fichier d'origine. 
+
+créer une nouvelle branche sur son repo local et s'y localiser:
+```
+$ git checkout -b NOM-DE-LA-BRANCHE
+```
+pousser la nouvelle branche vers GitLab
+
+```
+$ git push origin NOM-DE-LA-BRANCHE
+```
+lister toutes les branches en local: 
+```
+$ git branch
+```
+retourner sur la branche principale:
+```
+$ git checkout master
+```
+
+effacer une branche: 
+```
+$ git branch -d NOM-DE-BRANCHE-A-EFFACER
+$ git push origin :NOM-DE-BRANCHE-A-EFFACER
+```
+
+après avoir fusionné les branches:
+```
+git remote prune origin
+```
+pour "élaguer" les branches restantes sur le remote
+ 
 ## remonter le temps
 ```
 git reflog
