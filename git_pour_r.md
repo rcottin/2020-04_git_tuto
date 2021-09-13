@@ -302,6 +302,13 @@ $ git branch -d NOM-DE-BRANCHE-A-EFFACER
 $ git push origin :NOM-DE-BRANCHE-A-EFFACER
 ```
 
+fusionner des branches en local: 
+```
+$ git checkout master         # switcher vers la branche maître
+$ git merge NOM-BRANCHE       # intégrer les changement de l'autre branche
+$ git branch -d NOM-BRANCHE   # (optionnel) effacer la branche
+```
+
 après avoir fusionné les branches:
 ```
 git remote prune origin
